@@ -1,17 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BoxMover
     - CameraScript
     - PlayerScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -21,8 +20,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -33,7 +36,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
-    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -48,6 +50,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 61
@@ -56,26 +60,40 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 598}
+      Script: {instanceID: 648}
     - Class: 114
-      Script: {instanceID: 1722}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 2210}
+      Script: {instanceID: 1840}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 3000}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 22294}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 27488}
+      Script: {instanceID: 3020}
+    - Class: 114
+      Script: {instanceID: 3264}
+    - Class: 114
+      Script: {instanceID: 3622}
+    - Class: 114
+      Script: {instanceID: 4524}
+    - Class: 114
+      Script: {instanceID: 4706}
+    - Class: 114
+      Script: {instanceID: 5082}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -267,6 +285,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: e08dc097b830ae769e9cdd9b04e903ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxMover
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -373,6 +397,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraScript
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -507,6 +537,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 4f47bc84a389b82a52bd9a04af78cc5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerScript
+  - hash:
+      serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -619,20 +655,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: ba8885765ad8fe055d2176fbae6efcd9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerScript
-  - hash:
-      serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraScript
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/imarc/OneDrive/Desktop/Unity Stuff/Hello World Tutorial/Tutorial
-    2/builds/Tutorial 2.exe
+  playerPath: C:/Users/imarc/OneDrive/Desktop/Unity Stuff/Tutorial 2/builds/Tutorial
+    2.exe
